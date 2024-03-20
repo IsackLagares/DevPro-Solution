@@ -12,17 +12,16 @@
 
 <body>
     <div class="modal" id="modal">
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="">
-            <h1> Entre em Contato </h1>
+        <form method="post" action="../PHP/envio_email.php">
+            <h1> Entre em <span>Contato</span></h1>
             <div class="input-box">
-                <input type="text" placeholder="Seu Nome" required>
+                <input type="text" placeholder="Seu Nome" name="nome" required autocomplete="off">
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Seu E-Mail" required>
+                <input type="text" placeholder="Seu E-Mail" name="email" required autocomplete="off">
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Seu Pedido" required>
+                <input type="text" placeholder="Seu Pedido" name="pedido" required autocomplete="off">
             </div>
 
             <button type="submit" class="btn"> Enviar </button>
