@@ -5,4 +5,9 @@ function openModal() {
     modal.addEventListener('blur', (e) => {
         modal.classList.remove('view')
     })
+    modal.addEventListener('click', (e) => {
+        if(e.target.id == 'btn') {
+        modal.classList.remove('view')
+        }
+    })
 }
