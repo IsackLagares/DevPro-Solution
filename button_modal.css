@@ -1,10 +1,11 @@
 .button-modal {
+    position: absolute;
     display:flex;
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 300px;
-    margin-left: 300px;
+    margin-top: 315px;
+    margin-left: 600px;
 }
 
 .button {
