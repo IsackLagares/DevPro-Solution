@@ -8,6 +8,7 @@
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     z-index: 1000;
+    display: none;
 }
 
 .modal h1 {
@@ -44,7 +45,7 @@
     background-color: #fff;
     border: none;
     outline: none;
-    border-radius: 40px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
@@ -52,11 +53,11 @@
     font-weight: 600;
 }
 
-.modal.abrir {
+.modal.view {
     display: flex;
 }
 
-@keyframes abrirmodal {
+@keyframes openModal {
     from {
         opacity: 0;
         transform: translate3d(0, -20px, -5px);
@@ -65,4 +66,8 @@
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+.view .modal {
+    animation: openModal 0.5s;
 }
