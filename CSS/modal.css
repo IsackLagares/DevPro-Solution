@@ -17,7 +17,7 @@
 }
 
 .modal h1 span {
-    color: var(--dark-red);
+    color: var(--dark-blue);
 }
 
 .modal .input-box {
@@ -57,8 +57,9 @@
     font-weight: 600;
 }
 
-.modal.view {
-    display: center;
+.view {
+    display: block; /* Alteração para 'block' ao invés de 'center' */
+    animation: openModal 0.5s; /* Movido a animação para a classe .view */
 }
 
 @keyframes openModal {
@@ -72,6 +73,17 @@
     }
 }
 
-.view .modal {
-    animation: openModal 0.5s;
+.closeModal {
+    animation: closeModal 0.5s;
+}
+
+@keyframes closeModal {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
 }

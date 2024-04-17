@@ -1,13 +1,24 @@
-function openModal() {
-    const modal = document.getElementById('modal')
-    modal.classList.add('view')
+const modal = document.getElementById('modal'); 
 
-    modal.addEventListener('blur', (e) => {
-        modal.classList.remove('view')
-    })
+function openModal() {
+    modal.classList.add('view');
+
+    function closeModal() {
+        modal.classList.add('closeModal');
+        setTimeout(function() {
+            modal.classList.remove('view', 'closeModal');
+        }, 500);
+    }
+
     modal.addEventListener('click', (e) => {
-        if(e.target.id == 'btn') {
-        modal.classList.remove('view')
+        if (!modal.contains(e.target)) {
+            closeModal();
         }
-    })
+    });
+
+    // Remova a classe 'closeModal' quando a animação de fechamento for concluída
+    modal.addEventListener('animationend', () => {
+        modal.classList.remove('closeModal');
+    });
 }
+

@@ -15,7 +15,7 @@
 
 .button span {
     height: 50px;
-    background-color: var(--dark-red);
+    background-color: var(--dark-blue);
 
     transform: skew(-30deg);
 }
@@ -43,6 +43,47 @@
     font-weight: 800;
     letter-spacing: 1px;
     cursor: pointer;
-    
+
     transform: skew(30deg);
+}
+
+.button span button :hover {
+    transform: skew(30deg);
+    box-shadow: 5px 5px 10px skew(30deg) rgba(0, 0, 0, 1.0);
+}
+
+
+.button-shadow {
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1000;
+
+    margin-top: 318px;
+    margin-left: 605px;
+}
+
+.shadow {
+    display: flex;
+    column-gap: 12px;
+}
+
+.shadow span {
+    height: 50px;
+    background-color: linear-gradient(30deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.2), 70%);
+
+    transform: skew(-30deg);
+}
+
+.shadow span:nth-child(1) {
+    width: 8px;
+}
+
+.shadow span:nth-child(2) {
+    width: 14px;
+}
+
+.shadow span:nth-child(3) {
+    width: 250px;
 }

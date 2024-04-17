@@ -1,0 +1,47 @@
+.loader {
+    height: 120px;
+    width: 120px;
+    background: var(--blue);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loader .box {
+    height: 50px;
+    width: 50px;
+    background: var(--dark-blue);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        background-color: #5791bd;
+    }
+}
+
+.box:nth-child(1) {
+    animation-delay: 0.25s;
+}
+
+.box:nth-child(2) {
+    left: 60px;
+    top: 5px;
+    animation-delay: 0.50s;
+}
+
+.box:nth-child(3) {
+    left: 50%;
+    top: 50%;
+    animation-delay: 0.75s;
+}
+
+.box:nth-child(4) {
+    left: 5px;
+    top: 50%;
+    animation-delay: 1s;
+}
