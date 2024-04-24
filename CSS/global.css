@@ -12,8 +12,8 @@
 
 :root {
 	--text: #f1f1f1;
-	--blue: #4cccc6;
-	--dark-blue: #032846;
+	--blue: #30C3D9;
+	--dark-blue: #308DD9;
 
 	--background-body: linear-gradient(125deg, var(--dark-blue) 36%, var(--blue) 36%);
 }

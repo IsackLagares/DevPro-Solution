@@ -15,7 +15,7 @@
     <h1><span>DevPro</span> Solution</h1>
 </header>
 
-<body id="body">
+<body>
     <div class="modal" id="modal">
         <form action="https://formsubmit.co/isackrafael10@gmail.com" method="POST" />
             <h1> Entre em <span>Contato</span></h1>
@@ -26,7 +26,7 @@
                 <input type="text" placeholder="Seu E-Mail" name="email" required autocomplete="off">
             </div>
             <div class="input-box">
-                <textarea cols="55" rows="5" placeholder="Digite seu Pedido" required></textarea>
+                <textarea placeholder="Digite seu Pedido" required></textarea>
             </div>
 
             <button type="submit" id="send" class="btn"> Enviar </button>
@@ -36,32 +36,15 @@
             <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
-    <div class="button-modal">
-        <div class="button">
-            <span></span>
-            <span></span>
-            <span>
-                <button onclick="openModal()" type="button" id="btn"> ORÇAMENTO </button>
-            </span>
-        </div>
-    </div>
-    <div class="button-shadow">
-        <div class="shadow">
-            <span></span>
-            <span></span>
-            <span>
-                <div> </div>
-            </span>
-        </div>
-    </div>
-    
+
+    <div id="btn" onclick="openModal()"> ORÇAMENTO </div>
+
     <div class="loader">
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
     </div>
-
 
     <script src="../Scripts/modal.js"></script>
     <script src="../Scripts/loader.js"></script>
