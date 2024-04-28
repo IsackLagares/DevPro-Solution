@@ -6,6 +6,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 4000;
 }
 
 .loader .box {
@@ -16,6 +17,7 @@
     left: 5px;
     top: 5px;
     animation: animate 1s linear infinite;
+    border-radius: 40px;
 }
 
 @keyframes animate {

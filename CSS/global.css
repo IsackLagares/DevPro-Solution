@@ -18,20 +18,12 @@
 	--background-body: linear-gradient(125deg, var(--dark-blue) 36%, var(--blue) 36%);
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: var(--background-body);
-}
-
 header {
 	height: 80px;	
 	width: 100%;
 	background-color: var(--dark-blue);
 	position: absolute;
-	z-index: 2000;
+	z-index: 3000;
 	margin-top: -41%;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 	justify-content: center;
@@ -39,11 +31,38 @@ header {
 	align-items: center;
 }
 
-
 header h1 {
 	color: white;
 }
 
 header h1 span {
 	color: var(--blue);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: var(--background-body);
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+	z-index: 2000;
+}
+
+footer {
+	height: 300px;	
+	width: 100%;
+	background-image: linear-gradient(177deg, black , #1B1426 65%);
+	position: absolute;
+	margin-top: 67%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	/* z-index: 1000; */
+}
+
+/* 1B1426 */
+
+footer p {
+	color: white
 }
