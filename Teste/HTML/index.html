@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo"> D<span>ev</span>P<span>ro</span> Solution</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href=#>Home</a></li>
+                <li class="nav-item"><a href=#>About</a></li>
+                <li class="nav-item"><a href=#>Menu</a></li>
+                <li class="nav-item"><a href=#>Contact</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="modal" id="modal">
+                <form action="https://formsubmit.co/isackrafael10@gmail.com" method="POST">
+                    <h1> Entre em <span>Contato</span></h1>
+                    <div class="input-box">
+                        <input id="modal" type="text" placeholder="Seu Nome" name="nome" required autocomplete="off">
+                    </div>
+                    <div class="input-box">
+                        <input id="modal" type="text" placeholder="Seu E-Mail" name="email" required autocomplete="off">
+                    </div>
+                    <div class="input-box-text">
+                        <input id="modal" placeholder="Digite seu Pedido" required autocomplete="off">
+                    </div>
+        
+                    <button type="submit" id="send" class="btn"> Enviar </button>
+        
+                    <input type="hidden" name="_subject" value="Orçamento">
+                    <input type="hidden" name="_next" value="next.html">
+                    <input type="hidden" name="_cc" value="another@email.com">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div class="circle"></div>
+            <div class="home-text">
+                <h4 class="text-h4">Welcome DevPro Solution</h4>
+                <h1 class="text-h1">Different spice for different tastes</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore libero consequatur
+                    voluptatibus dolorum minima et ut voluptate animi nesciunt! Quibusdam cupiditate ut vel
+                    officia expedita numquam aut sequi! Est, nisi.</p>
+                <div id="home-btn" onclick="openModal()">ORÇAMENTO</div>
+            </div>
+        </section>
+    </main>
+    <script src="../Scripts/scripts.js"></script>
+    <script src="../Scripts/modal.js"></script>
+</body>
+</html>

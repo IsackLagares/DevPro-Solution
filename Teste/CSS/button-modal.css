@@ -1,0 +1,19 @@
+#home-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 45px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#home-btn:hover {
+    background-color: #4dd2ff;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 0 20px #4dd2ff;
+    transform: translateY(-10px);
+}

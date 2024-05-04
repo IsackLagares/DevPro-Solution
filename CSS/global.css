@@ -12,8 +12,8 @@
 
 :root {
 	--text: #f1f1f1;
-	--blue: #30C3D9;
-	--dark-blue: #308DD9;
+	--blue: #3E95ED;
+	--dark-blue: #3E5EED;
 
 	--background-body: linear-gradient(125deg, var(--dark-blue) 36%, var(--blue) 36%);
 }
@@ -50,19 +50,16 @@ body {
 }
 
 footer {
-	height: 300px;	
+	height: 130px;	
 	width: 100%;
-	background-image: linear-gradient(177deg, black , #1B1426 65%);
+	background-color: #2c50f5;
 	position: absolute;
-	margin-top: 67%;
+	margin-top: 56%;
 	justify-content: center;
 	display: flex;
 	align-items: center;
-	/* z-index: 1000; */
 }
 
-/* 1B1426 */
-
-footer p {
+footer h3 {
 	color: white
 }
