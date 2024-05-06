@@ -14,3 +14,15 @@ window.onload = function () {
     };
 }
 
+const card = document.getElementById('card');
+
+function openCard() {
+    if(element.target.id === 'contact'){
+        card.style.animation = 'openCard';
+    }
+}
+//  window.onload = function (){
+//     document.onmouseover = function(element) {
+//         if(element.target.id === 'contact')
+//     }
+//  }

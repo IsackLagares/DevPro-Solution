@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://github.com/IsackLagares.png">
     <link rel="stylesheet" href="../CSS/global.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="navigation">
@@ -14,8 +17,7 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href=#>Home</a></li>
                 <li class="nav-item"><a href=#>About</a></li>
-                <li class="nav-item"><a href=#>Menu</a></li>
-                <li class="nav-item"><a href=#>Contact</a></li>
+                <li class="nav-item" id="contact" onmouseover="openCard()"> <a href=#>Contact</a></li>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -25,6 +27,13 @@
         </nav>
     </header>
     <main>
+        <div class="card" id="card">
+            LinkendIn dos desenvolvedores
+            <div class="info-row">
+                <img href="https://github.com/IsackLagares.png">
+                <p>Isack Lagares</p>
+            </div>
+        </div>
         <section class="home">
             <div class="modal" id="modal">
                 <form action="https://formsubmit.co/isackrafael10@gmail.com" method="POST">
@@ -38,12 +47,12 @@
                     <div class="input-box-text">
                         <input id="modal" placeholder="Digite seu Pedido" required autocomplete="off">
                     </div>
-        
+
                     <button type="submit" id="send" class="btn"> Enviar </button>
-        
+
                     <input type="hidden" name="_subject" value="Orçamento">
                     <input type="hidden" name="_next" value="next.html">
-                    <input type="hidden" name="_cc" value="another@email.com">
+                    <input type="hidden" name="_cc" value="00001092257160sp@al.educacao.sp.gov.br">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_captcha" value="false">
                 </form>
@@ -62,4 +71,5 @@
     <script src="../Scripts/scripts.js"></script>
     <script src="../Scripts/modal.js"></script>
 </body>
+
 </html>

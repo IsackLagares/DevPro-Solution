@@ -114,3 +114,28 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+@keyframes openCard {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.card {
+    width: 250px;
+    height: 100px;
+    background-color: var(--white);
+    border-radius: 15pxS;
+    /* margin-top: 150px; */
+}
+
+.card .info-row {
+    flex-direction: row;
+    justify-content: space-between;
+
+}
