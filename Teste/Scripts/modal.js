@@ -14,6 +14,7 @@ window.onload = function () {
     };
 }
 
+<<<<<<< HEAD
 const contact = document.getElementById('contact');
 const card = document.getElementById('card');
 
@@ -51,3 +52,17 @@ function closeCard() {
         card.style.animation = 'closeCard 1.0s';
     });
 }
+=======
+const card = document.getElementById('card');
+
+function openCard() {
+    if(element.target.id === 'contact'){
+        card.style.animation = 'openCard';
+    }
+}
+//  window.onload = function (){
+//     document.onmouseover = function(element) {
+//         if(element.target.id === 'contact')
+//     }
+//  }
+>>>>>>> eb289909815de6324f42563c0dc69237f6b8b724

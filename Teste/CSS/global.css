@@ -123,7 +123,7 @@ body {
     margin-bottom: 4rem;
 }
 
-@media (max-width:785px) {
+@media (max-width:740px) {
     .navigation {
         padding: 18px 20px;
     }
