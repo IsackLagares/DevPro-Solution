@@ -9,8 +9,9 @@
     padding: 15px 30px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    z-index: 1000;
+    z-index: 2000;
     display: none;
+    /* margin-right: 70%; */
 }
 
 .modal h1 {
@@ -105,6 +106,29 @@
 }
 
 @keyframes closeModal {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 20px, 5px);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes openCard {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes closeCard {
     from {
         opacity: 1;
         transform: translate3d(0, 20px, 5px);

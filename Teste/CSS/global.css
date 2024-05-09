@@ -32,6 +32,7 @@ body {
     background: white;
     transition: all 0.5s;
     position: fixed;
+    z-index: 9000;
 }
 
 .navigation .logo {
@@ -101,6 +102,7 @@ body {
 }
 
 .home-text {
+    margin-top: 100px;
     max-width: 37rem;
     position: absolute;
 }
@@ -112,7 +114,7 @@ body {
 }
 
 .home-text .text-h1 {
-    font-size: 4rem;
+    font-size: 50px;
     margin-bottom: 1rem;
     line-height: 4rem;
 }
@@ -160,6 +162,7 @@ body {
 
     .nav-item {
         margin: 16px 0;
+        position: absolute;
     }
 
     .home {
@@ -186,4 +189,77 @@ body {
     .circle { 
         display: none;
     }
+}
+
+.footer {
+    height: 300px;
+    background-color: var(--white);
+}
+.footer .logo {
+    margin-left: 38px;
+    color: var(--blue);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.circle-bottom {
+    margin-top: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    clip-path: circle(50% at top right);
+}
+/***********************************************************************************************/
+/* 
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.content-card {
+    border-radius: 15px;
+    margin-bottom: 26%;
+    margin-left: 70%;
+    width: 300px;
+    height: 175px;
+    background-color: var(--white);
+    position: relative;
+    z-index: 1000;
+    display: none; 
+}
+
+.content-card .imgbox {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 20px;
+    /* display: contents; */
+}
+
+.content-card .imgbox img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%; 
+    margin-right: 10px;
+}
+
+.content-card .imgbox p {
+    margin-top: 6px;
+    color: var(--blue);
+}
+
+
+.content-card .content {
+    position: relative;
+    display: contents;
+    /* margin-top: -100px; */
+    text-align: center;
+    color: #111;
 }
