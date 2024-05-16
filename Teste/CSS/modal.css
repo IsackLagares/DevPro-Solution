@@ -116,10 +116,6 @@
     }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> eb289909815de6324f42563c0dc69237f6b8b724
 @keyframes openCard {
     from {
         opacity: 0;
@@ -131,7 +127,6 @@
     }
 }
 
-<<<<<<< HEAD
 @keyframes closeCard {
     from {
         opacity: 1;
@@ -141,18 +136,4 @@
         opacity: 0;
         transform: translate3d(0, 0, 0);
     }
-=======
-.card {
-    width: 250px;
-    height: 100px;
-    background-color: var(--white);
-    border-radius: 15pxS;
-    /* margin-top: 150px; */
-}
-
-.card .info-row {
-    flex-direction: row;
-    justify-content: space-between;
-
->>>>>>> eb289909815de6324f42563c0dc69237f6b8b724
 }
