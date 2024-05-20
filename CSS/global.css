@@ -1,65 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('button_modal.css');
+@import url('button-modal.css');
 @import url('modal.css');
-@import url('loader.css');
+@import url('card.css');
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
-	--text: #f1f1f1;
-	--blue: #3E95ED;
-	--dark-blue: #3E5EED;
-
-	--background-body: linear-gradient(125deg, var(--dark-blue) 36%, var(--blue) 36%);
-}
-
-header {
-	height: 80px;	
-	width: 100%;
-	background-color: var(--dark-blue);
-	position: absolute;
-	z-index: 3000;
-	margin-top: -41%;
-	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-	justify-content: center;
-	display: flex;
-	align-items: center;
-}
-
-header h1 {
-	color: white;
-}
-
-header h1 span {
-	color: var(--blue);
+    --blue: #4da6ff;
+    --white: #fff;
+    --dark: #1e1c2a;
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: var(--background-body);
-	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-	z-index: 2000;
+    color: var(--white);
+    background: var(--dark);
 }
 
-footer {
-	height: 130px;	
-	width: 100%;
-	background-color: #2c50f5;
-	position: absolute;
-	margin-top: 56%;
-	justify-content: center;
-	display: flex;
-	align-items: center;
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0 3px #ccc;
+    width: 100%;
+    background: white;
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 9000;
 }
 
-footer h3 {
-	color: white
+.navigation .logo {
+    color: var(--blue);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--dark)
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a {
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+    color: var(--blue);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    clip-path: circle(50% at bottom right);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    position: relative;
+}
+
+.home-text {
+    max-width: 37rem;
+    position: absolute;
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+@media (max-width:850px) {
+    .navigation {
+        padding: 18px 20px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background:var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .nav-menu.ativo {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+        position: absolute;
+    }
+
+    .home {
+        padding: 100px 2%;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 5rem;
+    }
+
+    .home .text-h4 {
+        font-size: 15px;
+    }
+
+    .home .text-h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+
+    .circle { 
+        display: none;
+    }
+}
+
+.footer {
+    height: 85px;
+    background-color: var(--white);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .logo {
+    margin-left: 38px;
+    color: var(--blue);
+    font-size: 1.7rem;
+    font-weight: 600;
 }

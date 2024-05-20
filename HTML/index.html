@@ -3,53 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-
-    <title> DevPro Solution </title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/global.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>DevPro Solution</title>
 </head>
 
-<header>
-    <h1><span>DevPro</span> Solution</h1>
-</header>
-
 <body>
-    <div class="modal" id="modal">
-        <form action="https://formsubmit.co/isackrafael10@gmail.com" method="POST">
-            <h1> Entre em <span>Contato</span></h1>
-            <div class="input-box">
-                <input id="modal" type="text" placeholder="Seu Nome" name="nome" required autocomplete="off">
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo"> D<span>ev</span>P<span>ro</span> Solution</a>
+            <ul class="nav-menu">
+                <li class="nav-item" id="contact" onmouseover="openCard()" onmouseout="closeCard()"><a
+                        href=#>Portfólio</a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="home">
+            <div class="content-card" id="card" onmouseover="showCard()">
+                <div id="card" class="content">
+                    <h3 id="card">GitHub dos desenvolvedores</h3>
+
+                    <a href="https://github.com/IsackLagares" target="_blank">
+                        <div class="imgbox" id="card">
+                            <img src="https://github.com/IsackLagares.png">
+                            <p id="card">
+                                Isack Lagares
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/GabrDeme" target="_blank">
+                        <div class="imgbox" id="card">
+                            <img src="https://github.com/GabrDeme.png">
+                            <p id="card">
+                                Gabriel Demétrio
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="input-box">
-                <input id="modal" type="text" placeholder="Seu E-Mail" name="email" required autocomplete="off">
+            <div class="modal" id="modal">
+                <form action="https://formsubmit.co/isackrafael10@gmail.com" method="POST">
+                    <h1> Entre em <span>Contato</span></h1>
+                    <div class="input-box">
+                        <input id="modal" type="text" placeholder="Seu Nome" name="nome" required autocomplete="off">
+                    </div>
+                    <div class="input-box">
+                        <input id="modal" type="text" placeholder="Seu E-Mail" name="email" required autocomplete="off">
+                    </div>
+                    <div class="input-box-text">
+                        <input id="modal" placeholder="Digite seu Pedido" required autocomplete="off">
+                    </div>
+
+                    <button type="submit" id="send" class="btn"> Enviar </button>
+
+                    <input type="hidden" name="_subject" value="Orçamento">
+                    <input type="hidden" name="_next" value="next.html">
+                    <input type="hidden" name="_cc" value="00001092257160sp@al.educacao.sp.gov.br">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
             </div>
-            <div class="input-box-text">
-                <textarea id="modal" placeholder="Digite seu Pedido" required></textarea>
+            <div class="circle"></div>
+            <div class="home-text">
+                <h4 class="text-h4">Seja Bem-vindo ao DevPro Solution</h4>
+                <h1 class="text-h1">Começe agora fazendo o seu pedido!</h1>
+                <p> Transforme sua ideia em realidade com desenvolvimento sob medida! 
+                    Precisa de uma solução digital inovadora? Nosso time de especialistas está pronto
+                    para criar sistemas personalizados que atendam exatamente às suas necessidades.</p>
+                <div id="home-btn" onclick="openModal()">FAÇA SEU ORÇAMENTO</div>
             </div>
+        </section>
+    </main>
 
-            <button type="submit" id="send" class="btn"> Enviar </button>
-
-            <input type="hidden" name="_subject" value="Orçamento">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-        </form>
-    </div>
-
-    <div id="btn" onclick="openModal()"> ORÇAMENTO </div>
-
-    <!--
-    <svg>
-        <circle cx="35" cy="35" r="35"></circle>
-    </svg>
-    -->
-
+    <script src="../Scripts/scripts.js"></script>
     <script src="../Scripts/modal.js"></script>
+    <script src="../Scripts/card.js"></script>
 
+    <footer class="footer">
+        <a href="#" class="logo"> D<span>ev</span>P<span>ro</span> Solution</a>
+    </footer>
 </body>
-<footer>
-    <h3>DevPro Solution</h3>
-</footer>
 
 </html>
