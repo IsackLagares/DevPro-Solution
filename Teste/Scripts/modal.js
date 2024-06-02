@@ -1,4 +1,5 @@
 const modal = document.getElementById('modal');
+const tmodal = document.getElementById('tmodal');
 
 function openModal() {
     modal.style.display = 'block';
@@ -12,6 +13,14 @@ window.onload = function () {
             modal.style.display = 'none';
         }
     };
+}
+
+function openTModal() {
+    modal.style.animation = 'closeModal 0.5s';
+    modal.style.display = 'none';
+    setTimeout(() => {
+        tmodal.style.animation = 'openModal 0.5s';
+    }, 500);
 }
 
 const contact = document.getElementById('contact');

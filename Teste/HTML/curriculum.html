@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://github.com/IsackLagares.png">
     <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/curriculum.css">
     <link rel="stylesheet" href="../CSS/card.css">
-    <title>DevPro Solution</title>
+    <title>Currículo</title>
 </head>
 
 <body>
     <header>
         <nav class="navigation">
-            <a href="#" class="logo"> D<span>ev</span>P<span>ro</span> Solution</a>
+            <a href="../HTML/curriculum.html" class="logo"> D<span>ev</span>P<span>ro</span> Solution</a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="../HTML/index.html">Início</a></li>
                 <li class="nav-item"><a href="../HTML/index.html">Sobre</a></li>
@@ -55,52 +56,33 @@
                     </a>
                 </div>
             </div>
-            <div class="modal" id="modal">
-                <form action="https://formsubmit.co/isackrafael10@gmail.com" method="POST">
-                    <h1> Entre em <span>Contato</span></h1>
-                    <div class="input-box">
-                        <input id="modal" type="text" placeholder="Seu Nome" name="nome" required autocomplete="off">
-                    </div>
-                    <div class="input-box">
-                        <input id="modal" type="text" placeholder="Seu E-Mail" name="email" required autocomplete="off">
-                    </div>
-                    <div class="input-box-text">
-                        <input id="modal" placeholder="Digite seu Pedido" required autocomplete="off">
-                    </div>
-
-                    <button type="submit" id="send" class="btn"> Enviar </button>
-
-                    <input type="hidden" name="_subject" value="Orçamento">
-                    <input type="hidden" name="_next" value="next.html">
-                    <input type="hidden" name="_cc" value="00001092257160sp@al.educacao.sp.gov.br">
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-            </div>
-            <div class="modal" id="tmodal">
-                <h1><span>Obrigado</span> pela confiança </h1>
-                <div class="text-box">
-                    <p>A sua confiança é fundamental para nós, e estamos comprometidos em trabalhar arduamente para
-                        atender às suas necessidades com a máxima qualidade e eficiência. </p>
+                <!-- <div class="circle"></div> -->
+                <div class="curriculum" style="margin-right: 50%;">
+                    <h4 class="text-h4">Gabriel Demétrio</h4>
+                    <p>Atualmente cursando Desenvolvimento de Sistemas no SENAI de Informática em São Caetano do Sul,
+                        possue uma sólida base teórica e prática nas principais tecnologias de desenvolvimento web,
+                        mobile e back-end, com conhecimentos em HTML, CSS, JavaScript, React, React Native, C# e API's.
+                    </p>
+                    <div id="home-btn" onclick="openModal()">FAÇA SEU ORÇAMENTO</div>
                 </div>
-            </div>
-            <div class="circle"></div>
-            <div class="home-text">
-                <h4 class="text-h4">Seja Bem-vindo ao DevPro Solution</h4>
-                <h1 class="text-h1">Começe agora fazendo o seu pedido!</h1>
-                <p>Desenvolvido pela dupla Isack Lagares e Gabriel Demétrio, este site tem como propósito
-                    aproveitar as tecnologias mais recentes da área de desenvolvimento web. Utilizando HTML5, CSS3,
-                    JavaScript e até
-                    mesmo integração com APIs, a plataforma oferece um processo de solicitação de orçamentos para uma
-                    ampla gama de
-                    projetos web.</p>
+                <!-- <embed src="" type=""> -->
+        </section>
+        <hr class="line">
+        <!-- <div class="circle-bottom"></div> -->
+        <section class="home">
+            <!-- <embed src="" type=""> -->
+            <div class="curriculum" style="margin-left: 50%;">
+                <h4 class="text-h4">Isack Lagares</h4>
+                <p>Atualmente cursando Desenvolvimento de Sistemas no SENAI de Informática em São Caetano do Sul,
+                    possue uma sólida base teórica e prática nas principais tecnologias de desenvolvimento web,
+                    mobile e back-end, com conhecimentos em HTML, CSS, JavaScript, React, React Native, C# e API's.
+                </p>
                 <div id="home-btn" onclick="openModal()">FAÇA SEU ORÇAMENTO</div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <!-- <div class="circle-bottom"></div> -->
-        <a href="../HTML/index.html" class="logo" style="margin-left: 40.5%;"> D<span>ev</span>P<span>ro</span> Solution</a>
+        <a margin-top="30px" href="../HTML/index.html" class="logo"> D<span>ev</span>P<span>ro</span> Solution</a>
         <ul class="footer-info">
             <li class="footer-item"><a href="https://github.com/IsackLagares/DevPro-Solution">GitHub</a></li>
             <li class="footer-item"><a href="https://formsubmit.co/">API</a></li>
