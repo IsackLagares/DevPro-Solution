@@ -1,3 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('button-modal.css');
+@import url('modal.css');
+
 .container {
     position: relative;
     display: flex;
@@ -7,9 +11,9 @@
 } 
 
 .content-card {
-    border-radius: 5px;
-    margin-bottom: 300px;
-    margin-left: 600px;
+    border-radius: 15px;
+    margin-bottom: 26%;
+    margin-left: 70%;
     width: 300px;
     height: 175px;
     background-color: var(--white);
@@ -35,39 +39,13 @@
 
 .content-card .imgbox p {
     margin-top: 6px;
-    color: var(--dark);
-}
-
-.content-card .imgbox p:hover {
     color: var(--blue);
 }
 
 .content-card .content {
     position: relative;
-    display: contents; 
-    margin-top: -100px; 
+    /* display: contents; */
+    /* margin-top: -100px; 
     text-align: center;
     color: #111;
-} 
-
-@keyframes openCard {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -20px, -5px);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes closeCard {
-    from {
-        opacity: 1;
-        transform: translate3d(0, 20px, 5px);
-    }
-    to {
-        opacity: 0;
-        transform: translate3d(0, 0, 0);
-    }
-}
+} */
